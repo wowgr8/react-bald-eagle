@@ -20,10 +20,8 @@ function App() {
     <div style={{ textAlign: 'center' }}>
       <h1>Todo List</h1>
       <ul>
-        {todoList.map(function(item){
-          return (  
-            <li key={item.id}>{item.title}</li>
-          );
+        {todoList.map((item) => {
+          return <li key={item.id}>{item.title}</li>
         })}
       </ul>
     </div>
