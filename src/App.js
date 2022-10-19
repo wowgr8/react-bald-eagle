@@ -11,7 +11,7 @@ const todoList = [
   },
   {
     id: 3,
-    title: "Tell dog she's a good girl"
+    title: "Tell dog she's a good girl!"
   }
 ];
 
@@ -20,7 +20,11 @@ function App() {
     <div style={{ textAlign: 'center' }}>
       <h1>Todo List</h1>
       <ul>
-        <li></li>
+        {todoList.map(function(item){
+          return (  
+            <li key={item.id}>{item.title}</li>
+          );
+        })}
       </ul>
     </div>
   );
