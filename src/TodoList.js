@@ -17,7 +17,11 @@ const todoList = [
 
 function TodoList() {
   return (
-    <div>TodoList</div>
+    <ul>
+      {todoList.map((item) => {
+        return <li key={item.id}>{item.title}</li>
+      })}
+    </ul>
   )
 }
 
