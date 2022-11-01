@@ -1,6 +1,10 @@
 import React from 'react'
 
 function AddTodoForm() {
+  const handleAddTodo = (event) => {
+
+  }
+
   return (
     <form>
       <label htmlFor="search">Title </label>
