@@ -4,11 +4,12 @@ import TodoList from './TodoList';
 
 function App() {
   const [ newTodo, setNewTodo ] = useState();
-  
+
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>Todo List</h1>
       <AddTodoForm />
+      <p>{newTodo}</p>
       <TodoList />
     </div>
   );
