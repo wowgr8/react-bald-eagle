@@ -4,6 +4,7 @@ import TodoList from './TodoList';
 
 function App() {
   const [ newTodo, setNewTodo ] = useState();
+  const [ todoList, setTodoList ] = useState([]);
 
   return (
     <div style={{ textAlign: 'center' }}>
