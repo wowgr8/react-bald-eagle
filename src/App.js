@@ -6,9 +6,7 @@ function App() {
   const [ todoList, setTodoList ] = useState([]);
 
   const addTodo = (newTodo) => {
-    console.log(newTodo);
     setTodoList([...todoList, newTodo])
-
   }
 
   return (
