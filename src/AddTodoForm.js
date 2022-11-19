@@ -6,12 +6,10 @@ function AddTodoForm(props) {
   const handleTitleChange = (event) => {    
     const newTodoTitle = event.target.value;
     setTodoTitle(newTodoTitle);
-    console.log(newTodoTitle);
   }
 
   const handleAddTodo = (event) => {
     event.preventDefault();
-    const todoTitle = event.target.todoTitle.value;
     props.onAddTodo(todoTitle)
     event.target.title.value = "";
   }
