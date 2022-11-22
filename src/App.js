@@ -20,11 +20,11 @@ function App() {
   }
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <>
       <h1>Todo List</h1>
       <AddTodoForm onAddTodo={addTodo} />
       <TodoList todoList={todoList} />
-    </div>
+    </>
   );
 }
 
