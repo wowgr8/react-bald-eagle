@@ -1,9 +1,9 @@
 import React from 'react'
 
-function InputWithLabel({ todoTitle, handleTitleChange }) {
+function InputWithLabel({ todoTitle, handleTitleChange, label }) {
   return (
     <>
-      <label htmlFor="todoTitle">Title </label>
+      <label htmlFor="todoTitle">{label} </label>
       <input id="todoTitle" type="text" name="title" value={todoTitle} onChange={handleTitleChange}/>
     </>
   )
