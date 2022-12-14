@@ -4,6 +4,7 @@ import TodoList from './TodoList';
 
 function App() {
   const [ todoList, setTodoList ] = useState([]);
+  const [ isLoading, setIsLoading ] = useState(true);
 
   useEffect(() => {
     new Promise((resolve, reject) => {
