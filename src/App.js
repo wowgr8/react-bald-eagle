@@ -18,12 +18,13 @@ function App() {
     })
     .then((result)=>{
       setTodoList([...result.data.todoList]);
+      setIsLoading(false);
     })
   },[]);
   
   useEffect(() => {
     if( isLoading === false ){
-      localStorage.setItem("savedTodoList", JSON.stringify(todoList));
+      localStorage.setItem("todoList", JSON.stringify(todoList));
     }
   }, [todoList]);
 
