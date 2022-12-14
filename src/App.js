@@ -22,7 +22,9 @@ function App() {
   },[]);
   
   useEffect(() => {
-    localStorage.setItem("savedTodoList", JSON.stringify(todoList));
+    if( isLoading === false ){
+      localStorage.setItem("savedTodoList", JSON.stringify(todoList));
+    }
   }, [todoList]);
 
   const addTodo = (newTodo) => {
