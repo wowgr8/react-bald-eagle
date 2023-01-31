@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom'; // import {createRoot} from 'react-dom/client'
 import App from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 
