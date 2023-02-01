@@ -28,7 +28,6 @@ function App() {
   }, [todoList]);
 
   const addTodo = (newTodo) => {   
-    
     fetch(`https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE_ID}/Default`, {
       method: 'POST',
       cache: 'no-cache',
@@ -44,15 +43,10 @@ function App() {
         typecast: true,
       })
     })
-    
-    let todo = {}
     .then((response) => response.json())
     .then((data) => {
-      todo.id = data.id;
-      todo.title = data.fields.Title;
+      setTodoList([...todoList, data]);
     })
-
-    setTodoList([...todoList, ...newTodo]);
   };
 
   const removeTodo = (id) => {
