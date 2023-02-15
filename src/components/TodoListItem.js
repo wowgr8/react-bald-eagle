@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as RedCheckMark } from '../SVG/done-checkmark.svg';
-import styles from '../CSS/TodoListItem.module.css';
+import styles from './TodoListItem.module.css';
 
 function TodoListItem({ fields, onRemoveTodo, id }) {
   return (
