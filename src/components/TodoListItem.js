@@ -1,6 +1,7 @@
 import React from 'react';
-import { ReactComponent as RedCheckMark } from './SVG/done-checkmark.svg';
-import styles from './CSS/TodoListItem.module.css';
+import { ReactComponent as RedCheckMark } from '../SVG/done-checkmark.svg';
+import styles from './TodoListItem.module.css';
+import PropTypes from 'prop-types';
 
 function TodoListItem({ fields, onRemoveTodo, id }) {
   return (
@@ -11,6 +12,12 @@ function TodoListItem({ fields, onRemoveTodo, id }) {
       </button>
     </div>
   )
+}
+
+TodoListItem.propTypes = {
+  fields: PropTypes.object,
+  onRemoveTodo: PropTypes.func,
+  id: PropTypes.string
 }
 
 export default TodoListItem
