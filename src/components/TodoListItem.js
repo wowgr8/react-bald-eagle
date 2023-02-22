@@ -16,7 +16,7 @@ function TodoListItem({ fields, onRemoveTodo, id }) {
 
 TodoListItem.propTypes = {
   fields: PropTypes.object,
-  onRemoveTodo: PropTypes.func,
+  onRemoveTodo: PropTypes.func.isRequired,
   id: PropTypes.string
 }
 

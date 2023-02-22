@@ -26,7 +26,7 @@ function InputWithLabel({ todoTitle, handleTitleChange, children }) {
 
 InputWithLabel.propTypes = {
   todoTitle: PropTypes.string,
-  handleTitleChange: PropTypes.func,
+  handleTitleChange: PropTypes.func.isRequired,
   children: PropTypes.string
 }
 
